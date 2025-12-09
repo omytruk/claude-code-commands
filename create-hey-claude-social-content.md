@@ -178,12 +178,13 @@ For **standalone Notes**:
 1. Decide angle together with user
 2. Present 3 hook options for that angle
 3. User selects hook
-4. Research relevant data/statistics if using data hook
-5. Draft full post using content from the Substack post to complement the hook
-6. User revises as needed
-7. **Proofread thoroughly** - check grammar, spelling, flow
-8. Finalize with hashtags, visual suggestion, and CTA variation
-9. **Then move to next post** - repeat process
+4. **Check for duplicate hooks** - ensure this hook is distinct from other LinkedIn posts this week (no similar opening lines)
+5. Research relevant data/statistics if using data hook
+6. Draft full post using content from the Substack post to complement the hook
+7. User revises as needed
+8. **Proofread thoroughly** - check grammar, spelling, flow
+9. Finalize with hashtags, visual suggestion, and CTA variation
+10. **Then move to next post** - repeat process
 
 ---
 

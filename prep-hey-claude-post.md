@@ -9,9 +9,8 @@ You will help prepare a Substack post through the following steps:
 2. **Proofreading & Cleanup** - Two-tier approach
 3. **SEO-Friendly URL** - Generate URL from heading
 4. **Midjourney Prompt** - Create feature image prompt
-5. **Cross-Linking** - Add links between posts
-6. **Notion Update** - Add post to database with publish date
-7. **Extract Substack Notes** - Create 6 shareable notes
+5. **Cross-Linking** - Add links to new post (premise-based matching)
+6. **Notion Update** - Add post to database with Draft Link, Premise, Audience, SEO Keywords
 
 ---
 
@@ -112,55 +111,80 @@ Convert the heading to URL-friendly format (e.g., "Thank you Claude for keeping 
 --chaos 20 --ar 4:3 --sref 3083026132 --sw 100 --v 7 --stylize 200
 ```
 
-**Generate 3 prompt options** that align with the post's main theme/hook.
+### Framework: Literal First, Then Abstract
 
-**Structure:** `illustration of [brief scene], [parameters]`
+**Step 4a: Define the premise in 3-6 words**
+What is this post actually about? Strip it down to the core idea.
 
-**Prompt Principles:**
-- **Less is more** — keep descriptions concise (5-10 words for scene)
-- **Can be abstract** — doesn't need a person/woman in every image
+**Step 4b: Identify 3 visual symbols (literal → abstract)**
+1. Most literal representation (the thing itself)
+2. Mid-level symbol (action or object that represents it)
+3. More abstract but still visual (metaphor you can see)
+
+**Step 4c: Write initial prompts with minimal words**
+- Describe WHAT you see, not how it feels
+- 5-10 words max for the scene
+- Example: "two friends hold hands" NOT "two friends sitting quietly creating safe space for each other"
 - Always start with "illustration of..."
+
+**Step 4d: Interpretation check (for each prompt)**
+Ask: "What could someone think of when they see this prompt?"
+- List 3-5 possible interpretations
+- If any contradict the premise (e.g., romantic when you mean friendship), revise the prompt
+- Add clarifying words to steer toward the right interpretation
+- Do NOT use negative words (e.g., "not romantic") — Midjourney doesn't handle negatives well
+
+**Example:**
+- Initial: `robot hugging a woman`
+- Interpretations: romantic couple, protection, comfort, friendship, sci-fi movie scene
+- Problem: "romantic couple" contradicts premise
+- Revised: `robot and woman as friends, warm embrace` or `friendly robot comforting a woman`
+
+**Step 4e: Final prompts**
+Generate 3 prompt options combining scene + parameters.
+
+**Structure:** `illustration of [brief scene] [parameters]`
+
+**Key Principles:**
+- **Literal first** — start with the obvious visual, not abstract metaphors
+- **Less is more** — keep descriptions concise (5-10 words for scene)
 - Do NOT include artistic style descriptions (--sref handles styling)
 - Avoid the word "text" (confuses Midjourney into generating text overlays)
-
-**Scene ideas for Hey Claude:**
-- Literal/relatable imagery (productivity, workspaces, plants)
-- Abstract concepts (memory, connection, relief, overwhelm)
-- Warm, hopeful mood
 
 ---
 
 ## Step 5: Cross-Linking Plan
 
-**Goal:** Strengthen SEO by linking posts through existing keywords (not adding new sentences).
+**Goal:** Strengthen SEO by adding relevant internal links to the new post using premise-based semantic matching.
 
-### A. Link TO add in NEW post:
-1. Query Notion Substack Posts database to find all published Hey Claude posts
-2. Use **WebFetch** to read the actual published content from Substack (not Ulysses—Substack has the most current versions)
-3. Identify natural connection points in the new post where previous posts should be referenced
-4. Provide specific location and suggested link text
+### Process:
 
-### B. Links to ADD to PREVIOUS posts (after publication):
-1. Use **WebFetch** to read each published post from Substack
-2. Search for existing keywords in previous posts that relate to the new post's themes
-3. Suggest linking those keywords to the new post URL
-4. Only suggest links where keywords naturally exist—don't add new sentences
+**Step 5a: Query existing posts with premises**
+1. Query Notion Substack Posts database (`2a908620-e1b0-80fd-866d-ea04d0ba0a84`)
+2. Retrieve all Hey Claude posts with their **Premise** field
+3. Display premises in a table for reference
+
+**Step 5b: Define new post premise**
+Create a 3-8 word premise for the new post that captures its core idea.
+
+**Step 5c: Identify cross-link opportunities (premise-based)**
+1. Compare new post content and premise against existing post premises
+2. For each potential link, assign a **semantic match score (1-10)**
+3. Only recommend links with score **8 or higher**
+4. Look for natural anchor text in the new post content that could link to relevant previous posts
+
+**Step 5d: Present recommendations**
+For each recommended link:
+| Anchor Text | Links To (Post) | Premise Match | Score |
+|-------------|-----------------|---------------|-------|
+| [text from new post] | [previous post title] | [why it connects] | [8-10] |
 
 **Cross-linking principles:**
-- SEO-focused: link existing keywords, don't add filler sentences
-- Natural flow - if no keyword match exists, skip that post
-- Use descriptive anchor text (the keyword itself)
-- Typically 0-2 links per post (quality over quantity)
-- **Max 3 internal links per post** — if a post already has 3 links, either suggest swapping one for better relevance or skip that post entirely
-- **Paywalled resource page:** Link to `https://olenamytruk.substack.com/p/adhd-ai-os` where relevant (this is the hub for paid subscriber resources like Git repos, commands, etc.)
-
-### C. Auto-Create Cross-Linking Task
-After identifying cross-linking opportunities, automatically create a task in Notion:
-- **Database:** Tasks (`2a708620-e1b0-80f9-9306-f1d6d0984dbb`)
-- **Task title:** "Add cross-links to published Substack posts"
-- **Plan Date:** Publish date at 1pm (use 19:00 UTC for CST timezone)
-- **Project:** Link to "Substack: Hey Claude" (`2a708620-e1b0-81df-ba5c-da0514b7f74b`)
-- **Page content:** Bulleted list with each cross-linking update needed (post name, exact text to link, URL to link to)
+- **Semantic-based matching** — match on core meaning, not keyword coincidence
+- **8+ threshold** — only recommend strong semantic matches
+- **Natural anchor text** — link existing phrases, don't add new sentences
+- **Quality over quantity** — typically 0-2 links per new post
+- **Paywalled resource page:** Link to `https://olenamytruk.substack.com/p/adhd-ai-os` where relevant (hub for paid subscriber resources)
 
 ---
 
@@ -172,45 +196,28 @@ After identifying cross-linking opportunities, automatically create a task in No
 
 **Default Publish Date:** Tomorrow (unless user specifies otherwise)
 
+### Before creating the Notion entry:
+
+**Ask the user for the Draft Link:**
+- Substack provides a draft preview link that works before the post is published
+- This link is needed so the `/create-hey-claude-social-content` command can read the post content before publication
+- Ask: "What's the Substack draft link for this post? (You can find it in Substack's editor under Share → Copy link)"
+
 **Create new page with:**
-- Title: Post title
-- Link: `https://olenamytruk.substack.com/p/[url-slug]`
-- Publication: Relation to Hey Claude
-- Published Date: YYYY-MM-DD format
+- **Title:** Post title
+- **Link:** `https://olenamytruk.substack.com/p/[url-slug]`
+- **Draft Link:** The draft preview URL from Substack (URL field)
+- **Publication:** Relation to Hey Claude
+- **Published Date:** YYYY-MM-DD format
+- **Premise:** 3-8 word core idea of the post (from Step 5b)
+- **Audience:** Target persona(s) - e.g., "ADHD", "ADHD, Writers", "Artists"
+- **SEO Keywords:** Comma-separated list of keywords to optimize for (from research or post content)
 
----
-
-## Step 7: Extract Substack Notes
-
-**Database ID:** `2a908620-e1b0-8025-bac6-d78fdb1f9e64` (Substack Notes)
-
-**Goal:** Extract 6 punchy, shareable notes from the post
-
-**Note Types:**
-1. **The Relatable Confession** - Personal struggle/admission
-2. **The Ironic Win** - Contrast between past achievement and current challenge
-3. **The ADHD Truth Bomb** - Key insight about ADHD patterns
-4. **The Requirements/Framework** - Bullet list of what works
-5. **The Pattern Breaker** - The transformation/breakthrough
-6. **The Before/After** - Clear contrast showing change
-
-**Format Guidelines:**
-- 2-4 sentences or short paragraph
-- Can include emoji if relevant to voice
-- Include hook/intrigue
-- Thread-style for lists (bullets with context)
-
-**Critical: Notes must be self-contained**
-- Each note must tell a complete mini-story that makes sense WITHOUT any context from the post
-- Avoid referencing "the file," "this command," "the system" etc. without explaining what it is
-- Test: Would a stranger scrolling Substack understand this note on its own?
-
-**Save to Notion:**
-For each note, create page with:
-- Note: The full text (in title field)
-- Related Post: Relation to the new post
-- Publication: Relation to Hey Claude
-- Used: Unchecked (false)
+**Field descriptions:**
+- **Draft Link** — Substack's preview link that works before publication. Used by social content command to read post content.
+- **Premise** — Used for semantic cross-linking between posts. Should capture the core "what this post is about" in a way that can be compared to other posts.
+- **Audience** — Primary persona(s) this post is written for. Options: ADHD, Writers, Artists (can combine).
+- **SEO Keywords** — Terms people might search for that this post addresses. Used for discoverability and future SEO optimization.
 
 ---
 
@@ -223,6 +230,7 @@ For each note, create page with:
 5. Execute remaining steps **one at a time**, getting user confirmation before moving to next step
 6. Mark each step complete in a todo list as you go
 7. Summarize what was completed at the end
+8. **Remind user** to run `/create-hey-claude-social-content` to create the week's social media content
 
 ---
 

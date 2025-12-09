@@ -10,6 +10,8 @@ Creates a consistent, ADHD-friendly closing ritual that:
 - Identifies loose ends or follow-up tasks
 - Prevents "what did we even do today?" anxiety
 
+**IMPORTANT:** Explicitly confirm each step as you complete it - even if there's nothing to do for that step. This creates a clear audit trail and prevents accidentally skipping steps. 
+
 ---
 
 ## Task Overview
@@ -18,8 +20,10 @@ You will help close the session through the following steps:
 1. **Session Review** - Summarize what was accomplished
 2. **CLAUDE.md Check** - Identify needed updates
 3. **Update Documentation** - Make changes to CLAUDE.md
-4. **Capture Loose Ends** - Note any follow-ups or unfinished items
-5. **Final Check** - Offer to create brain dumps or reminders
+4. **File Sync Reminders** - Remind to copy updated skills/commands
+5. **Paywalled Page Check** - Check if Hey Claude resource page needs updating
+6. **Capture Loose Ends** - Note any follow-ups or unfinished items
+7. **Final Check** - Offer to create brain dumps or reminders
 
 ---
 
@@ -135,27 +139,32 @@ For each section needing updates:
 
 ---
 
-## Step 3.5: File Sync Reminders
+## Step 4: File Sync Reminders
 
-### Skills/Commands Copy Reminder
-If any Claude skills or slash commands were created or modified during the session:
-- **Skills:** Remind user to copy from `Documents/PROJECTS/claude-skills/` to the active skills location
-- **Commands:** Remind user to copy from `Documents/PROJECTS/claude-code-commands/` to `~/.claude/commands/`
+If any Claude skills or slash commands were created or modified during the session, remind user to sync files:
 
-Only mention this if changes were actually made to these files.
+- **Skills:** Copy from `Documents/PROJECTS/claude-skills/` to the active skills location
+- **Commands:** Copy from `Documents/PROJECTS/claude-code-commands/` to `~/.claude/commands/`
 
-### Paywalled Page Update Check
-If the session involved Hey Claude Substack AND any of the following:
+**Only mention this step if changes were actually made to these files.** If no skills or commands were modified, skip to Step 5.
+
+---
+
+## Step 5: Paywalled Page Check
+
+**This step applies if the session involved Hey Claude Substack AND any of the following:**
 - Updated or created Claude skills
 - Updated or created Claude Code commands
 - Built new AI tools or workflows
 - Made changes that paid subscribers should know about
 
-**Then ask:** "Since we updated [skills/commands/tools], do you want to check if the paywalled resource page needs updating? (`https://olenamytruk.substack.com/p/adhd-ai-os`)"
+**If applicable, ask:** "Since we updated [skills/commands/tools], do you want to check if the paywalled resource page needs updating? (`https://olenamytruk.substack.com/p/adhd-ai-os`)"
+
+**If none of the above apply, skip this step.**
 
 ---
 
-## Step 4: Capture Loose Ends
+## Step 6: Capture Loose Ends
 
 Identify and document:
 
@@ -192,7 +201,7 @@ Identify and document:
 
 ---
 
-## Step 5: Final Check
+## Step 7: Final Check
 
 ### Offer capture options:
 

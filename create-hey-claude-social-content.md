@@ -204,8 +204,8 @@ Here's the proposed schedule for your social media content:
 
 | Date | Day | Content |
 |------|-----|---------|
-| Dec 11 | Wednesday | Bluesky link post |
-| Dec 12 | Thursday | LinkedIn Post 1 + Substack standalone #1 + Bluesky standalone |
+| Dec 11 | Wednesday | LinkedIn Post 1 + Bluesky link post |
+| Dec 12 | Thursday | LinkedIn Post 3 + Substack standalone #1 + Bluesky standalone |
 | Dec 13 | Friday | Substack standalone #2 + Bluesky standalone |
 | Dec 16 | Monday | Substack Note (with link) + Bluesky standalone |
 | Dec 17 | Tuesday | LinkedIn Post 2 + Bluesky link post |
@@ -219,10 +219,10 @@ Does this look correct? Any dates need adjustment?
 
 | Day | Content |
 |-----|---------|
-| Wednesday (publish day) | Bluesky link post |
-| Thursday | LinkedIn Post 1 + Substack standalone #1 + Bluesky standalone |
+| Wednesday (publish day) | LinkedIn Post 1 + Bluesky link post |
+| Thursday | LinkedIn Post 3 (if available) + Substack standalone #1 + Bluesky standalone |
 | Friday | Substack standalone #2 + Bluesky standalone (or link if there are 3 posts with link) |
-| Monday | LinkedIn Post 3 (if available) + Substack Note (with link) + Bluesky standalone |
+| Monday | Substack Note (with link) + Bluesky standalone |
 | Tuesday | LinkedIn Post 2 + Bluesky link post |
 
 **All tasks scheduled at 10am Central Time**

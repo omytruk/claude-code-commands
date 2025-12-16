@@ -102,6 +102,17 @@ Generate **one URL** based on the post heading.
 
 Convert the heading to URL-friendly format (e.g., "Thank you Claude for keeping my plants alive!" → `thank-you-claude-keeping-plants-alive`)
 
+### Check for Duplicate URLs
+
+Before finalizing the URL:
+
+1. Query the Notion Substack Posts database (`2a908620-e1b0-80fd-866d-ea04d0ba0a84`)
+2. Extract all existing URL slugs from the **Link** field
+3. Check if the proposed URL slug already exists
+4. If duplicate found: warn the user and suggest an alternative
+
+**This prevents 404 errors and SEO conflicts from duplicate URLs.**
+
 ---
 
 ## Step 4: Midjourney Prompt for Feature Image

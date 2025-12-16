@@ -139,14 +139,20 @@ For each section needing updates:
 
 ---
 
-## Step 4: File Sync Reminders
+## Step 4: File Sync
 
-If any Claude skills or slash commands were created or modified during the session, remind user to sync files:
+If any Claude skills or slash commands were created or modified during the session, **copy them to the active location automatically**:
 
-- **Skills:** Copy from `Documents/PROJECTS/claude-skills/` to the active skills location
 - **Commands:** Copy from `Documents/PROJECTS/claude-code-commands/` to `~/.claude/commands/`
+  ```bash
+  cp ~/Documents/PROJECTS/claude-code-commands/[command-name].md ~/.claude/commands/
+  ```
 
-**Only mention this step if changes were actually made to these files.** If no skills or commands were modified, skip to Step 5.
+- **Skills:** Copy from `Documents/PROJECTS/claude-skills/` to the active skills location (if applicable)
+
+**After copying, confirm to user:** "✅ Copied [command-name].md to ~/.claude/commands/"
+
+**Only do this step if changes were actually made to these files.** If no skills or commands were modified, skip to Step 5.
 
 ---
 

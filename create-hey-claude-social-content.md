@@ -6,18 +6,30 @@ This command creates a week's worth of social media content to promote a Hey Cla
 
 ## Strategy & Context
 
+### Platform Sub-Personas
+
+Before creating content, understand who we're speaking to on each platform:
+
+**Bluesky Jamie** — The younger/more online version. More openly ADHD, uses it as identity. Tech-curious but not technical. Looking for community and validation. Ready to engage with vulnerable content directly.
+
+**Substack Jamie** — The writer version. Already exploring their creative side, reading other writers. More open about neurodivergence. Looking for "people like me." Appreciates longer, more reflective content.
+
+**LinkedIn Jamie** — The professional version. In a corporate or freelance role, managing work while hiding ADHD struggles. Scrolling during a break between meetings. Needs permission to admit the struggle exists. NOT ready to publicly engage with vulnerable content — needs professional framing first.
+
 ### Why This Approach
 
-**LinkedIn** (2-3 posts/week)
+**LinkedIn** (3 posts/week: Wed, Thu, Tue)
 - Goal: Drive traffic to Substack (NOT grow LinkedIn following - Olena already has a solid network)
 - Audience: Professional/AI/leadership network (ex-colleagues from EPAM, coaches, tech/transformation folks)
 - Challenge: LinkedIn deprioritizes external links - workaround is link in first comment
-- What works: Data hooks, professional reframes, vulnerability + takeaway, contrarian takes
+- **KEY INSIGHT:** LinkedIn Jamie is in "professional mode" — use adjacent professional topics with data hooks as a "Trojan horse" to lead them to vulnerable Substack content
+- What works: Data hooks on ALL posts, professional framing, "AI productivity" language that hides the real message about emotional safety
 
-**Substack Notes** (2-3 notes/week + daily engagement)
+**Substack Notes** (5 notes/week, one per day)
 - Goal: Drive traffic to posts AND grow following
 - Audience: Writers, creatives, neurodivergent folks already on Substack
 - Critical insight: For accounts under 100 subscribers, *commenting on others' Notes* is more valuable than posting your own. Notes have long staying power (2-3 weeks).
+- **Linked note always on Monday**
 - What works: Contrarian/challenging beliefs, emotional/inspirational, community builders
 
 **Bluesky** (5 posts/week)
@@ -54,10 +66,10 @@ This command creates a week's worth of social media content to promote a Hey Cla
 ## Task Overview
 
 You will create promotional content for a published post through the following steps:
-1. **Identify the post** - Get post details from Notion, read full content
-2. **Create Bluesky posts** (5 posts for the week)
-3. **Create Substack Notes** (3 notes for the week)
-4. **Create LinkedIn posts** (2 posts, optionally 3)
+1. **Identify the post** - Query Notion for most recent post, read Jamie persona, read full content
+2. **Create Bluesky posts** (5 posts for the week) + Jamie check
+3. **Create Substack Notes** (5 notes for the week, one per day) + Jamie check
+4. **Create LinkedIn posts** (3 posts) + Jamie check
 5. **Create daily Notion tasks** with copy-paste ready content
 
 **IMPORTANT:** Work through ONE platform at a time. Don't present all content at once - it's overwhelming.
@@ -66,17 +78,21 @@ You will create promotional content for a published post through the following s
 
 ## Step 1: Identify the Post
 
-**Ask the user:**
-- Which post to promote (title or most recent)
-- What is the publish date (to align the weekly schedule)
+**Do NOT ask the user** for post details. Query Notion directly:
 
-**Query Notion** (`2a908620-e1b0-80fd-866d-ea04d0ba0a84`) to get:
-- Post title
-- Post URL (Link field)
-- Draft Link (for reading content before publication)
-- Published date
+1. **Query Notion** (`2a908620-e1b0-80fd-866d-ea04d0ba0a84`) sorted by Published Date descending, limit 1 to get the most recent post:
+   - Post title
+   - Post URL (Link field)
+   - Draft Link (for reading content before publication)
+   - Published date
+   - Premise
+   - Audience
 
-**Read the post content** via WebFetch using the **Draft Link** (not the published URL). The draft link works before the post is published, allowing social content creation ahead of time.
+2. **Read the Jamie persona** from `~/Documents/WRITING/Hey Claude/hey-claude-strategy.md` to have the full persona fresh in mind.
+
+3. **Read the post content** via WebFetch using the **Draft Link** (not the published URL). The draft link works before the post is published, allowing social content creation ahead of time.
+
+4. **Present to user**: Show what post was found and the publish date, confirm this is correct before proceeding.
 
 ---
 
@@ -86,11 +102,11 @@ You will create promotional content for a published post through the following s
 - 300 character limit (tight - every word counts)
 - 2-3 hashtags recommended
 - Link cards don't count toward limit, but link text does
-- Younger, tech-savvy audience with strong neurodivergent community
+- Audience: Bluesky Jamie — openly ADHD, looking for community, validation, and "people like me"
 
 **Hashtag strategy:**
-- Standard rotation (pick 2-3): #ADHD, #AI, #Neurodivergent, #Writing, #Substack, #MentalHealth
-- Add 1 custom per post as relevant (e.g., #Creativity, #ClaudeAI)
+- Standard rotation (pick 2-3): #ADHD, #AI, #Neurodivergent, #Writing, #Substack, #MentalHealth, #Neurospicy
+- Add 1 custom per post as relevant (e.g., #Creativity, #ClaudeAI, #JustDoIt)
 
 **Mix for the week:**
 - 2-3 posts WITH link to the article
@@ -104,23 +120,30 @@ You will create promotional content for a published post through the following s
 4. **Proofread all posts** - check grammar, spelling, character count
 5. Finalize
 
+**Jamie Check (before moving to next platform):**
+Ask: "Would Bluesky Jamie relate to all 5 of these posts? Do they feel authentic, vulnerable, and like something they'd want to engage with?"
+
 ---
 
-## Step 3: Create Substack Notes (3 total)
+## Step 3: Create Substack Notes (5 total, one per day)
 
 **Platform specs:**
 - No strict character limit (can be longer, more reflective)
 - Writers and neurodivergent audience
 - Discovery happens through engagement more than posting
 - Notes can bring subscribers 2-3 weeks after posting
+- Audience: Substack Jamie — writer version, exploring creative side, looking for "people like me"
 
-**Mix for the week:**
-- 1 note WITH link to the article
-- 2 standalone notes (longer, more reflective)
+**Schedule:**
+- **Day 1 (Publish day, Wed):** Standalone note (e.g., emotional fragment)
+- **Day 2 (Thu):** Standalone note
+- **Day 3 (Fri):** Standalone note OR restack another creator's relevant note
+- **Day 4 (Mon):** **Linked note (ALWAYS Monday)**
+- **Day 5 (Tue):** Standalone note (e.g., practical prompt)
 
 **Process:**
 
-For the **post-linked Note**:
+For the **linked Note** (Monday):
 1. Draft 2-3 complete options (summary style that preserves Olena's voice)
 2. Present options to user
 3. User picks/tweaks one
@@ -134,9 +157,12 @@ For **standalone Notes**:
 4. **Proofread** - check grammar and spelling
 5. Finalize
 
+**Jamie Check (before moving to next platform):**
+Ask: "Would Substack Jamie relate to all 5 of these notes? Do they feel reflective, authentic, and like content from a fellow writer exploring similar struggles?"
+
 ---
 
-## Step 4: Create LinkedIn Posts (2-3 total)
+## Step 4: Create LinkedIn Posts (3 total)
 
 **Platform specs:**
 - Link in FIRST COMMENT (not in post body) - LinkedIn deprioritizes external links
@@ -144,47 +170,67 @@ For **standalone Notes**:
 - Data visualizations get 36% better performance
 - First 2 lines = everything (the hook determines engagement)
 - First 60 minutes of engagement matter most
+- Audience: LinkedIn Jamie — professional mode, hiding ADHD struggles, needs permission to engage
+
+**KEY STRATEGY: Trojan Horse Approach**
+LinkedIn Jamie is NOT ready to publicly engage with vulnerable content like "my legs walked me to the bedroom." Instead:
+- Use **adjacent professional topics** that lead TO the Substack post
+- Use **professional framing** they expect ("AI productivity system," "executive function support," "cognitive load")
+- The Substack post delivers the vulnerable truth; LinkedIn gives **permission to click**
+- ALL posts get **data/news hooks** — research relevant statistics
+
+**Schedule:**
+- **Wednesday (publish day):** Post 1 — Substack preview format (closest to post content, drives traffic while fresh)
+- **Thursday:** Post 2 — PDF carousel format (adjacent topic with framework/guide)
+- **Tuesday:** Post 3 — Selfie format (personal story with professional framing)
 
 **Hashtag strategy:**
 - 3-5 hashtags per post
 - Standard rotation (pick 2-3): #ADHD, #AI, #Leadership, #ExecutiveLife, #Neurodivergent, #FutureOfWork
-- Add 1-2 custom per post based on topic (e.g., #MentalHealth, #Productivity, #Burnout)
-
-**Mix for the week:**
-- Post 1 (Thursday): Data/News hook - lead with surprising stat or trend, pivot to personal take
-- Post 2 (Tuesday): Personal insight/ADHD angle - lead with vulnerability, more human
-- Post 3 (Monday, OPTIONAL): Carousel/Framework - only when content warrants (e.g., list, myth vs reality, framework). Can be created via Gamma app.
-
-**Angle types to draw from:**
-1. **Data/News Hook** - Start with surprising stat or recent trend, pivot to perspective
-2. **Professional Reframe** - Take personal ADHD insight and frame for leaders/professionals
-3. **Contrarian/Unexpected Take** - Challenge assumptions the network might have
-4. **Lesson Learned** - Vulnerability + clear takeaway
+- Add 1-2 custom per post based on topic (e.g., #MentalHealth, #Productivity, #Burnout, #HighPerformers)
 
 **Visual options:**
-- Post 1: Substack preview card
-- Post 2: Midjourney image or selfie/headshot
-- Post 3: Carousel via Gamma (if doing optional post)
+- Post 1 (Wed): Substack preview card
+- Post 2 (Thu): PDF carousel (create via Gamma or Canva)
+- Post 3 (Tue): Selfie
 
-**Link-to-comment CTA variations (rotate through - include one in each draft):**
-- "the link is in the first comment👇"
-- "Link in the comments 👇"
-- "I wrote more about this — link in the first comment 👇"
-- "Full post in the comments."
-- "Link below 👇"
-- "More in the first comment."
+**Closing format (use on all posts):**
+End with a combined intro + segue that introduces Olena AND leads to the post:
+```
+I'm Olena, and I build AI tools that help neurodivergent professionals and creatives work with their brains, not against them. [Segue to post content] — link in the first comment 👇
+```
 
-**Process (one post at a time - do NOT draft multiple posts at once):**
-1. Decide angle together with user
-2. Present 3 hook options for that angle
+**Link-to-comment CTA variations (rotate through):**
+- "Link in the first comment 👇"
+- "You'll find the link in the first comment 👇"
+- "Wrote more about what that looks like in practice — link in the first comment."
+
+**Process:**
+
+**Phase 1: Choose angles (do this BEFORE diving into individual posts)**
+1. Brainstorm 4-5 distinct **adjacent professional topic angles** that could lead to the Substack post
+2. Present all angles to user with brief descriptions
+3. User picks 3 angles
+4. Together, decide which angle maps to which format:
+   - Which is closest to post content? → **Substack preview (Wed)**
+   - Which works as a framework/guide? → **PDF carousel (Thu)**
+   - Which is most personal/story-driven? → **Selfie (Tue)**
+
+**Phase 2: Create posts one at a time**
+For each post (in order: Wed, Thu, Tue):
+1. Research relevant data/statistics for that angle (web search)
+2. Present 3 hook options using the data
 3. User selects hook
-4. **Check for duplicate hooks** - ensure this hook is distinct from other LinkedIn posts this week (no similar opening lines)
-5. Research relevant data/statistics if using data hook
-6. Draft full post using content from the Substack post to complement the hook
-7. User revises as needed
-8. **Proofread thoroughly** - check grammar, spelling, flow
-9. Finalize with hashtags, visual suggestion, and CTA variation
-10. **Then move to next post** - repeat process
+4. **Check for duplicate hooks** - ensure this hook is distinct from other LinkedIn posts this week
+5. Draft full post with professional framing
+6. User revises as needed
+7. **Proofread thoroughly** - check grammar, spelling, flow
+8. Finalize with hashtags, visual suggestion, and CTA variation
+9. **For PDF posts:** Create FULL slide content (not just titles) — include all text, prompts, examples for each slide
+10. **Then move to next post** - repeat from step 1
+
+**Jamie Check (before moving to next step):**
+Ask: "Would LinkedIn Jamie relate to all 3 of these posts? Do they feel professional enough to engage with publicly, while still leading to the deeper content?"
 
 ---
 
@@ -193,6 +239,8 @@ For **standalone Notes**:
 **Database ID:** `2a708620-e1b0-80f9-9306-f1d6d0984dbb` (Tasks)
 
 **Hey Claude Project ID:** `2a708620-e1b0-81df-ba5c-da0514b7f74b`
+
+**Task naming format:** `Hey Claude Social Media: [Mon DD]` (e.g., "Hey Claude Social Media: Dec 17")
 
 ### Before creating tasks: Confirm the schedule
 
@@ -204,11 +252,11 @@ Here's the proposed schedule for your social media content:
 
 | Date | Day | Content |
 |------|-----|---------|
-| Dec 11 | Wednesday | LinkedIn Post 1 + Bluesky link post |
-| Dec 12 | Thursday | LinkedIn Post 3 + Substack standalone #1 + Bluesky standalone |
-| Dec 13 | Friday | Substack standalone #2 + Bluesky standalone |
-| Dec 16 | Monday | Substack Note (with link) + Bluesky standalone |
-| Dec 17 | Tuesday | LinkedIn Post 2 + Bluesky link post |
+| Dec 17 | Wednesday | LinkedIn Post 1 (Substack preview) + Bluesky link post + Substack Note (standalone) |
+| Dec 18 | Thursday | LinkedIn Post 2 (PDF) + Bluesky standalone + Substack Note (standalone) |
+| Dec 19 | Friday | Bluesky link post + Substack Note (restack) |
+| Dec 22 | Monday | Bluesky standalone + Substack Note (with link) |
+| Dec 23 | Tuesday | LinkedIn Post 3 (Selfie) + Bluesky link post + Substack Note (standalone) |
 
 Does this look correct? Any dates need adjustment?
 ```
@@ -219,21 +267,50 @@ Does this look correct? Any dates need adjustment?
 
 | Day | Content |
 |-----|---------|
-| Wednesday (publish day) | LinkedIn Post 1 + Bluesky link post |
-| Thursday | LinkedIn Post 3 (if available) + Substack standalone #1 + Bluesky standalone |
-| Friday | Substack standalone #2 + Bluesky standalone (or link if there are 3 posts with link) |
-| Monday | Substack Note (with link) + Bluesky standalone |
-| Tuesday | LinkedIn Post 2 + Bluesky link post |
+| Wednesday (publish day) | LinkedIn Post 1 (Substack preview) + Bluesky link post + Substack Note (standalone) |
+| Thursday | LinkedIn Post 2 (PDF) + Bluesky standalone + Substack Note (standalone) |
+| Friday | Bluesky link post + Substack Note (standalone or restack) |
+| Monday | Bluesky standalone + Substack Note (with link - ALWAYS Monday) |
+| Tuesday | LinkedIn Post 3 (Selfie) + Bluesky link post + Substack Note (standalone) |
 
 **All tasks scheduled at 10am Central Time**
 
 **Each task includes:**
 1. Platform emoji header (📍 LinkedIn, 📝 Substack, 🦋 Bluesky)
-2. Full copy-paste ready content
-3. Hashtags (included in content where applicable)
-4. Visual suggestion (for LinkedIn)
-5. Link reminder (for LinkedIn: "Link in FIRST COMMENT: [URL]")
-6. Daily engagement section (see below)
+2. **Full copy-paste ready content** (text + link + hashtags all together for one copy-paste)
+3. Supporting notes BELOW the content (visual suggestions, PDF content, reminders)
+4. **For PDF posts:** Include FULL slide content — all text, prompts, and examples for each slide (not just titles)
+5. Daily engagement section (see below)
+
+**Content Format in Tasks:**
+```
+📍 LINKEDIN (format type)
+
+[Full post text including hashtags]
+
+FIRST COMMENT: [URL]
+
+Visual: [suggestion]
+
+[If PDF: Full slide-by-slide content here]
+
+---
+
+🦋 BLUESKY (with link / standalone)
+
+[Full post text including link and hashtags - ready to copy-paste]
+
+---
+
+📝 SUBSTACK NOTE (type)
+
+[Full note text including link if applicable - ready to copy-paste]
+
+---
+
+✨ DAILY ENGAGEMENT (20-30 min total)
+[engagement section]
+```
 
 **Daily Engagement Section (include in EVERY task):**
 
@@ -261,12 +338,12 @@ Browse #ADHD #AI #Neurodivergent #Writing feeds and reply to 3-5 posts:
 
 ## Workflow Summary
 
-1. **Identify the post** (Step 1)
-2. **Create Bluesky posts** (Step 2) - draft 5 → user tweaks → proofread → finalize
-3. **Create Substack Notes** (Step 3) - options for link note, fragments for standalone → user selects/shapes → proofread → finalize
-4. **Create LinkedIn posts one at a time** (Step 4) - angle → hooks → user picks → draft full post → user revises → proofread → finalize → repeat for next post
+1. **Identify the post** (Step 1) - Query Notion directly (don't ask user), read Jamie persona, read post content
+2. **Create Bluesky posts** (Step 2) - draft 5 → user tweaks → proofread → Jamie check → finalize
+3. **Create Substack Notes** (Step 3) - one per day, linked note on Monday → user shapes → proofread → Jamie check → finalize
+4. **Create LinkedIn posts one at a time** (Step 4) - adjacent topic → data research → hooks → user picks → draft with professional framing → user revises → proofread → Jamie check → finalize
 5. **Confirm schedule with dates** (Step 5) - present table with actual dates → user confirms
-6. **Create all daily tasks in Notion** (Step 5)
+6. **Create all daily tasks in Notion** (Step 5) - use naming format "Hey Claude Social Media: [Mon DD]"
 7. **Summarize** what was created
 
 ---
@@ -277,8 +354,12 @@ Browse #ADHD #AI #Neurodivergent #Writing feeds and reply to 3-5 posts:
 - **One platform at a time** - don't overwhelm with all content at once
 - **User drives voice** - provide drafts, let user tweak to sound authentic
 - **ALWAYS proofread** - check grammar, spelling, and flow for ALL posts on ALL platforms before finalizing
+- **Jamie sub-persona check** - after each platform, verify content resonates with that platform's Jamie
+- **LinkedIn = Trojan horse** - adjacent professional topics + data hooks, NOT direct post summaries
 - **ADHD-friendly** - keep responses concise, use clear formatting
 - **Conversational tone** - this is a collaborative process
 - **Avoid formulaic language** - no templates, no "Hot take:", no "I used to... Then...", no rhetorical question hooks
 - **Weekend-free** - no social media tasks on Saturday/Sunday
 - **LinkedIn link reminder** - always remind to put link in first comment
+- **Full PDF content** - include all slide text, prompts, and examples in tasks (not just titles)
+- **Copy-paste ready** - all content (text + link + hashtags) together for easy copying

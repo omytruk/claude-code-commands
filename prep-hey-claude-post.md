@@ -6,7 +6,7 @@ This command helps prepare a Hey Claude Substack post from Ulysses for publicati
 
 You will help prepare a Substack post through the following steps:
 1. **Initial Draft Review** (Optional) - Flow, structure, formatting
-2. **Proofreading & Cleanup** - Two-tier approach
+2. **Proofreading & Cleanup** - Three-tier approach
 3. **SEO-Friendly URL** - Generate URL from heading
 4. **Midjourney Prompt** - Create feature image prompt
 5. **Cross-Linking** - Add links to new post (premise-based matching)
@@ -60,7 +60,7 @@ Review and suggest improvements for:
 
 ## Step 2: Proofreading & Cleanup
 
-Use **Option 1: Two-tier approach**
+Use the **three-tier approach**:
 
 ### TIER 1: Minor Fixes
 Create a quick list of:
@@ -91,6 +91,21 @@ Focus on:
 - Style: Short paragraphs, bold headings, direct address, authentic
 - Avoid: Corporate jargon, victimization narrative
 - Embrace: Personal stories, practical solutions, "tested on myself first" approach
+
+### TIER 3: Writing Strength Check
+
+Scan for these patterns that weaken writing and suggest stronger alternatives:
+
+| Pattern | Rule | Example |
+|---------|------|---------|
+| **just/actually/literally** | Remove unless essential to meaning | "I just wanted to..." → "I wanted to..." |
+| **very/really + adjective** | Replace with stronger word | "very big" → "gigantic"; "really tired" → "exhausted" |
+| **Telling feelings** | Show what you're ACTUALLY feeling/thinking | "I felt overwhelmed" → "My chest tightened" |
+| **"said" + reaction** | Replace with telling action | "Claude said and I stared" → "Claude made me stare in disbelief" |
+| **I realized/wondered/noticed** | Remove — make it obvious from context | "I realized I was stuck" → "I was stuck" |
+| **I was thinking** | Replace with what you were ACTUALLY doing | "I was thinking about it" → "I was torturing myself" |
+
+**Format:** Present findings in a table with Current → Suggested replacement. Only flag instances that genuinely weaken the writing — some uses are intentional.
 
 ---
 

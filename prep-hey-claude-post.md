@@ -137,23 +137,35 @@ Before finalizing the URL:
 --chaos 20 --ar 4:3 --sref 3083026132 --sw 100 --v 7 --stylize 200
 ```
 
-### Framework: Literal First, Then Abstract
+### Framework: Mine the Post First, Then Go Abstract
 
-**Step 4a: Define the premise in 3-6 words**
+**Step 4a: Extract the post's own visual language**
+Before inventing metaphors, ask: "What images does the post itself create?"
+- What comparisons or metaphors does the author use? (e.g., running vs. book-writing, treasure slipping through fingers)
+- What physical scenes are described?
+- Use THESE first — they're already connected to the content.
+
+**Step 4b: Define the emotional state through body language**
+Ask: "What does [the feeling] look like in a body?"
+- Don't show "about to try" — show "can't even try" if that's the feeling
+- Posture tells the story: sitting vs. standing, head in hands vs. looking ahead
+- Example: "hesitant at starting line" ≠ "collapsed next to starting line, head in hands"
+
+**Step 4c: Define the premise in 3-6 words**
 What is this post actually about? Strip it down to the core idea.
 
-**Step 4b: Identify 3 visual symbols (literal → abstract)**
-1. Most literal representation (the thing itself)
+**Step 4d: Identify 3 visual symbols (post imagery → abstract)**
+1. Most literal representation from the post's own metaphors
 2. Mid-level symbol (action or object that represents it)
 3. More abstract but still visual (metaphor you can see)
 
-**Step 4c: Write initial prompts with minimal words**
+**Step 4e: Write initial prompts with minimal words**
 - Describe WHAT you see, not how it feels
 - 5-10 words max for the scene
 - Example: "two friends hold hands" NOT "two friends sitting quietly creating safe space for each other"
 - Always start with "illustration of..."
 
-**Step 4d: Interpretation check (for each prompt)**
+**Step 4f: Interpretation check (for each prompt)**
 Ask: "What could someone think of when they see this prompt?"
 - List 3-5 possible interpretations
 - If any contradict the premise (e.g., romantic when you mean friendship), revise the prompt
@@ -166,7 +178,7 @@ Ask: "What could someone think of when they see this prompt?"
 - Problem: "romantic couple" contradicts premise
 - Revised: `robot and woman as friends, warm embrace` or `friendly robot comforting a woman`
 
-**Step 4e: Final prompts**
+**Step 4g: Final prompts**
 Generate 3 prompt options combining scene + parameters.
 
 **Structure:** `illustration of [brief scene] [parameters]`
@@ -221,6 +233,17 @@ For each recommended link:
 **Hey Claude Publication ID:** `2a908620-e1b0-8077-9c7d-dcc26e8f00f4`
 
 **Default Publish Date:** Tomorrow (unless user specifies otherwise)
+
+### Known Issue: MCP Tool Bug
+The `mcp__notion__API-post-page` tool has a bug where it serializes the `parent` object as a string instead of an object. **Workaround:** Use curl with the API token from `~/.mcp.json`:
+
+```bash
+curl -s -X POST 'https://api.notion.com/v1/pages' \
+  -H "Authorization: Bearer [TOKEN_FROM_~/.mcp.json]" \
+  -H "Content-Type: application/json" \
+  -H "Notion-Version: 2022-06-28" \
+  -d '{"parent": {"database_id": "2a908620-e1b0-80fd-866d-ea04d0ba0a84"}, "properties": {...}}'
+```
 
 ### Before creating the Notion entry:
 

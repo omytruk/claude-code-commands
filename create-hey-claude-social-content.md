@@ -21,7 +21,7 @@ Before creating content, understand who we're speaking to on each platform:
 **LinkedIn** (3 posts/week: Day 1, Day 2, Day 5)
 - Goal: Drive traffic to Substack (NOT grow LinkedIn following - Olena already has a solid network)
 - Audience: Professional/AI/leadership network (ex-colleagues from EPAM, coaches, tech/transformation folks)
-- Challenge: LinkedIn deprioritizes external links - workaround is link in first comment
+- **Include link directly in post** (not first comment) — tested and confirmed this doesn't hurt engagement
 - **KEY INSIGHT:** LinkedIn Jamie is in "professional mode" — use adjacent professional topics with data hooks as a "Trojan horse" to lead them to vulnerable Substack content
 - What works: Data hooks on ALL posts, professional framing, "AI productivity" language that hides the real message about emotional safety
 
@@ -114,7 +114,7 @@ Here's the proposed schedule for your social media content:
 | Date | Day | Content |
 |------|-----|---------|
 | Dec 17 | Day 1 (Publish) | LinkedIn Post 1 (Substack preview) + Bluesky link post + Substack Note (standalone - emotional) |
-| Dec 18 | Day 2 | LinkedIn Post 2 (PDF) + Bluesky standalone + Substack Note (standalone - emotional) |
+| Dec 18 | Day 2 | LinkedIn Post 2 (AI/Framework PDF) + Bluesky standalone + Substack Note (standalone - emotional) |
 | Dec 19 | Day 3 | Bluesky link post + Substack Note (restack) |
 | Dec 22 | Day 4 | Bluesky standalone + Substack Note (with link) |
 | Dec 23 | Day 5 | LinkedIn Post 3 (Selfie) + Bluesky link post + Substack Note (standalone - AI/practical) |
@@ -224,7 +224,7 @@ Ask: "Would Substack Jamie relate to all 5 of these notes? Do they feel reflecti
 ## Step 5: Create LinkedIn Posts (3 total)
 
 **Platform specs:**
-- Link in FIRST COMMENT (not in post body) - LinkedIn deprioritizes external links
+- **Include link directly in post** — tested and confirmed this doesn't hurt engagement
 - Longer posts (800-1000 words) get 26% better engagement
 - Data visualizations get 36% better performance
 - First 2 lines = everything (the hook determines engagement)
@@ -238,10 +238,10 @@ LinkedIn Jamie is NOT ready to publicly engage with vulnerable content like "my 
 - The Substack post delivers the vulnerable truth; LinkedIn gives **permission to click**
 - ALL posts get **data/news hooks** — research relevant statistics
 
-**Schedule:**
-- **Day 1 (publish day):** Post 1 — Substack preview format (closest to post content, drives traffic while fresh)
-- **Day 2:** Post 2 — PDF carousel format (adjacent topic with framework/guide)
-- **Day 5:** Post 3 — Selfie format (personal story with professional framing)
+**Schedule & Post Types:**
+- **Day 1 (publish day):** Post 1 — **Substack preview** (closest to post content, drives traffic while fresh)
+- **Day 2:** Post 2 — **AI/Framework PDF** (adjacent topic with AI angle — at least one LinkedIn post per week should feature AI)
+- **Day 5:** Post 3 — **Selfie** (personal story with professional framing)
 
 **Hashtag strategy:**
 - 3-5 hashtags per post
@@ -254,15 +254,29 @@ LinkedIn Jamie is NOT ready to publicly engage with vulnerable content like "my 
 - Post 3 (Day 5): Selfie
 
 **Closing format (use on all posts):**
-End with a combined intro + segue that introduces Olena AND leads to the post:
+End with a signature block that includes:
+1. A divider line
+2. "Hi, I'm Olena 👋" + a VARIATION of what she does (don't use the exact same phrase every time)
+3. A reaffirming sentence related to the post topic
+
 ```
-I'm Olena, and I build AI tools that help neurodivergent professionals and creatives work with their brains, not against them. [Segue to post content] — link in the first comment.
+—
+Hi, I'm Olena 👋 I build (and write about) [VARIATION]...
+
+[Reaffirming sentence related to the post topic]
 ```
 
-**Link-to-comment CTA variations (rotate through):**
-- "Link in the first comment."
-- "You'll find the link in the first comment."
-- "Wrote more about what that looks like in practice — link in the first comment."
+**Intro variations (rotate through):**
+- "...AI tools that work with neurodivergent and creative brains rather than against them."
+- "...helpful AI tools that solve real human problems."
+- "...AI tools that reduce cognitive load for thinking professionals."
+- "...how AI can hold the structure so you can just create."
+- "...AI tools that help neurodivergent professionals and creatives work with their brains, not against them."
+
+**Reaffirming sentence examples:**
+- "If there's an important project you are afraid to take a break from because you worry you won't be able to get back to it, please know that what you need is not 100% consistency but something that will make it easy for you to start again."
+- "Your creativity will thank you for the break."
+- "You don't need more discipline. You need tools that work with how your brain actually works."
 
 **Process:**
 
@@ -272,7 +286,7 @@ I'm Olena, and I build AI tools that help neurodivergent professionals and creat
 3. User picks 3 angles
 4. Together, decide which angle maps to which format:
    - Which is closest to post content? → **Substack preview (Day 1)**
-   - Which works as a framework/guide? → **PDF carousel (Day 2)**
+   - Which works as an AI-focused framework/guide? → **AI/Framework PDF (Day 2)** — ensure this has an AI angle
    - Which is most personal/story-driven? → **Selfie (Day 5)**
 
 **Phase 2: Create posts one at a time**
@@ -327,9 +341,7 @@ Each task should have this structure:
 ```
 📍 LINKEDIN (format type)
 
-[Full post text including hashtags]
-
-FIRST COMMENT: [URL]
+[Full post text including link and hashtags]
 
 Visual: [suggestion]
 
@@ -377,10 +389,13 @@ Visual: [suggestion]
 - **ALWAYS proofread** - check grammar, spelling, and flow for ALL posts on ALL platforms before finalizing
 - **Jamie sub-persona check** - after each platform, verify content resonates with that platform's Jamie
 - **LinkedIn = Trojan horse** - adjacent professional topics + data hooks, NOT direct post summaries
+- **LinkedIn AI post** - ensure at least one post (the PDF/Framework) has an AI angle
+- **LinkedIn link in post** - include link directly in post body (not first comment)
+- **LinkedIn closing format** - use signature block with intro variation + reaffirming sentence
 - **ADHD-friendly** - keep responses concise, use clear formatting
 - **Conversational tone** - this is a collaborative process
 - **Avoid formulaic language** - no templates, no "Hot take:", no "I used to... Then...", no rhetorical question hooks
-- **LinkedIn link reminder** - always remind to put link in first comment
+- **Weekend-free** - by default no social media tasks on Saturday/Sunday (unless specific circumstances impact the schedule)
 - **Full PDF content** - include all slide text, prompts, and examples in tasks (not just titles)
 - **Copy-paste ready** - all content (text + link + hashtags) together for easy copying
 - **Use Plan Date** - when setting task dates in Notion, use Plan Date property (not Due Date)

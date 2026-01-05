@@ -21,7 +21,7 @@ You will help close the session through the following steps:
 2. **CLAUDE.md Check** - Identify needed updates
 3. **Update Documentation** - Make changes to CLAUDE.md
 4. **File Sync Reminders** - Remind to copy updated skills/commands
-5. **Paywalled Page Check** - Check if Hey Claude resource page needs updating
+5. **AI Tools Resource Page Check** - Check if Hey Claude resource page needs updating
 6. **Capture Loose Ends** - Note any follow-ups or unfinished items
 7. **Final Check** - Offer to create brain dumps or reminders
 
@@ -156,17 +156,16 @@ If any Claude skills or slash commands were created or modified during the sessi
 
 ---
 
-## Step 5: Paywalled Page Check
+## Step 5: AI Tools Resource Page Check
 
-**This step applies if the session involved Hey Claude Substack AND any of the following:**
+**This step applies ANY time the session involved:**
 - Updated or created Claude skills
 - Updated or created Claude Code commands
 - Built new AI tools or workflows
-- Made changes that paid subscribers should know about
 
-**If applicable, ask:** "Since we updated [skills/commands/tools], do you want to check if the paywalled resource page needs updating? (`https://olenamytruk.substack.com/p/adhd-ai-os`)"
+**If any of the above apply, ask:** "Since we updated [skills/commands/tools], do you want to check if the AI Tools Resource Page needs updating? (`https://olenamytruk.substack.com/p/adhd-ai-os`)"
 
-**If none of the above apply, skip this step.**
+**If none of the above apply, confirm:** "No AI tools, commands, or skills were modified this session — skipping resource page check."
 
 ---
 

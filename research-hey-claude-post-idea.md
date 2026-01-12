@@ -1,5 +1,13 @@
 # Research Post Idea for Hey Claude
 
+> **DEPRECATED:** This command has been replaced by `/develop-hey-claude-post`, which combines research with story development through conversational interview. The new command takes you from rough idea to structured post outline in one flow.
+>
+> **Would you like to use `/develop-hey-claude-post` instead?**
+
+---
+
+*Original command preserved below for reference:*
+
 This command helps validate and enrich a Hey Claude post idea before writing by researching what your target audience actually struggles with.
 
 ## Hey Claude Personas

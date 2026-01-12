@@ -1,5 +1,13 @@
 # Pull the Obvious
 
+> **DEPRECATED:** This command has been replaced by `/develop-hey-claude-post`, which combines research with story development through conversational interview. The new command takes you from rough idea to structured post outline in one flow.
+>
+> **Would you like to use `/develop-hey-claude-post` instead?**
+
+---
+
+*Original command preserved below for reference:*
+
 This command helps surface the real story behind a Hey Claude post idea through a conversational interview process. The goal is to pull out the insights that feel "too obvious" to write about — because those are usually the most powerful.
 
 ## Why This Works

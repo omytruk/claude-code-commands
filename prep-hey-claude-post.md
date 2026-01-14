@@ -134,7 +134,7 @@ Before finalizing the URL:
 
 **Required Parameters:**
 ```
---chaos 20 --ar 4:3 --sref 3083026132 --sw 100 --v 7 --stylize 200
+--chaos 30 --ar 4:3 --sref 531726471 --sw 200 --stylize 300
 ```
 
 ### Framework: Mine the Post First, Then Go Abstract
@@ -145,19 +145,24 @@ Before inventing metaphors, ask: "What images does the post itself create?"
 - What physical scenes are described?
 - Use THESE first — they're already connected to the content.
 
-**Step 4b: Define the emotional state through body language**
-Ask: "What does [the feeling] look like in a body?"
-- Don't show "about to try" — show "can't even try" if that's the feeling
+**Identify the core visual metaphor.** What's the ONE image that would make someone immediately get the post? Often the most literal representation of the central metaphor is the strongest choice — don't shy away from it. (Example: A post about "idea graveyard" → a tombstone with "idea" on it.)
+
+**Step 4b: Define the emotional core (optional — only if using people)**
+If the image will include a person, ask: "What does [the feeling] look like in a body?"
 - Posture tells the story: sitting vs. standing, head in hands vs. looking ahead
 - Example: "hesitant at starting line" ≠ "collapsed next to starting line, head in hands"
+
+**Note:** Skip this step if going with an object-focused or symbolic image.
 
 **Step 4c: Define the premise in 3-6 words**
 What is this post actually about? Strip it down to the core idea.
 
-**Step 4d: Identify 3 visual symbols (post imagery → abstract)**
-1. Most literal representation from the post's own metaphors
-2. Mid-level symbol (action or object that represents it)
-3. More abstract but still visual (metaphor you can see)
+**Step 4d: Identify 3 visual approaches**
+1. **Visual punchline** — The most literal representation of the core metaphor (object, scene, or symbol — NOT necessarily a person)
+2. **Scene from the post** — A specific moment or image described in the narrative
+3. **Abstract/emotional** — A more interpretive representation
+
+**Avoid defaulting to "person doing X."** Consider object-only images, scenes without people, or symbolic representations. The image should capture the *idea*, not illustrate an action.
 
 **Step 4e: Write initial prompts with minimal words**
 - Describe WHAT you see, not how it feels

@@ -54,6 +54,20 @@ Before creating content, understand who we're speaking to on each platform:
 - Manufactured punchiness
 - Generic inspirational language
 
+**AI Cliché Phrases to AVOID:**
+- "Here's the truth"
+- "Turns out" (especially multiple times)
+- "Let me be clear"
+- "Here's the thing"
+- "The reality is"
+- "What most people don't realize"
+- "This is why"
+- "Here's what I learned"
+- "Game-changer"
+- "The secret is"
+
+Mix short and long sentences for natural rhythm. If a phrase sounds like something an AI would write, cut it.
+
 **EMBRACE:**
 - Mid-thought observations
 - Incomplete sentences if that's how the thought lands
@@ -66,12 +80,11 @@ Before creating content, understand who we're speaking to on each platform:
 ## Task Overview
 
 You will create promotional content for a published post through the following steps:
-1. **Identify the post** - Query Notion for most recent post, read Jamie persona, read full content
+1. **Identify the post** - Query Notion for most recent post, read Jamie persona, read full content from Ulysses
 2. **Confirm schedule and create task shells** - Confirm dates with user, create empty Notion tasks upfront
 3. **Create Bluesky posts** (5 posts for the week) + Jamie check → update Notion tasks
 4. **Create Substack Notes** (5 notes for the week) + Jamie check → update Notion tasks
 5. **Create LinkedIn posts** (3 posts) + Jamie check → update Notion tasks
-6. **Add daily engagement section** to all tasks
 
 **IMPORTANT:**
 - Work through ONE platform at a time. Don't present all content at once - it's overwhelming.
@@ -83,17 +96,19 @@ You will create promotional content for a published post through the following s
 
 **Do NOT ask the user** for post details. Query Notion directly:
 
-1. **Query Notion** (`2a908620-e1b0-80ad-8d78-000bc8f9d2cd`) sorted by Published Date descending, limit 1 to get the most recent post:
+1. **Query Notion Substack Posts** (`2a908620-e1b0-80fd-866d-ea04d0ba0a84`) sorted by Published Date descending, limit 1 to get the most recent post:
    - Post title
    - Post URL (Link field)
-   - Draft Link (for reading content before publication)
    - Published date
    - Premise
    - Audience
 
 2. **Read the Jamie persona** from `~/Documents/WRITING/Hey Claude/hey-claude-strategy.md` to have the full persona fresh in mind.
 
-3. **Read the post content** via WebFetch using the **Draft Link** (not the published URL). The draft link works before the post is published, allowing social content creation ahead of time.
+3. **Read the post content directly from Ulysses** (NOT via WebFetch, which only returns summaries):
+   - Navigate to the Hey Claude Ulysses project: `~/Library/Mobile Documents/X5AZV975AG~com~soulmen~ulysses3/Documents/Projects/326364fcbab7438fabb5ce008d2e6f33-ulproject/`
+   - Find the most recent `.ulysses` folder (use Glob to find, sort by modification time)
+   - Read `Content.xml` inside to get the full post content
 
 4. **Present to user**: Show what post was found and the publish date, confirm this is correct before proceeding.
 
@@ -126,16 +141,32 @@ Does this look correct? Any dates need adjustment?
 
 ### Create task shells in Notion
 
-After schedule is confirmed, create 5 empty task shells:
+After schedule is confirmed, create 5 empty task shells using `notion-create-pages`:
 
-**Database:** Tasks (`2a708620-e1b0-807e-b3eb-000b698751cc`)
+**Database:** Tasks (data_source_id: `2a708620-e1b0-807e-b3eb-000b698751cc`)
 
 **For each task:**
 - **Task title:** `Hey Claude Social Media: [Mon DD]` (e.g., "Hey Claude Social Media: Dec 17")
 - **Plan Date:** The corresponding date (use Plan Date, NOT Due Date)
-- **Project:** Hey Claude (`2a708620-e1b0-81df-ba5c-da0514b7f74b`)
+- **Project:** Hey Claude — **IMPORTANT: Use full URL format for relation fields, NOT just the page ID**
 
-**Note:** If page creation via API fails, ask user to create the 5 task shells manually (just titles), then find and update them with Plan Date and Project links.
+```json
+{
+  "parent": {"type": "data_source_id", "data_source_id": "2a708620-e1b0-807e-b3eb-000b698751cc"},
+  "pages": [
+    {
+      "properties": {
+        "Task": "Hey Claude Social Media: Dec 17",
+        "date:Plan Date:start": "2024-12-17",
+        "date:Plan Date:is_datetime": 0,
+        "Project": "https://www.notion.so/2a708620e1b081dfba5cda0514b7f74b"
+      }
+    }
+  ]
+}
+```
+
+**Note:** The Project field requires the full Notion URL (e.g., `https://www.notion.so/2a708620e1b081dfba5cda0514b7f74b`), not just the page ID. Using only the ID will cause a validation error.
 
 ---
 
@@ -290,7 +321,7 @@ Hi, I'm Olena 👋 I build (and write about) [VARIATION]...
    - Which is most personal/story-driven? → **Selfie (Day 5)**
 
 **Phase 2: Create posts one at a time**
-For each post (in order: Day 1, Day 2, Day 5):
+For Day 1 and Day 2 posts:
 1. Research relevant data/statistics for that angle (web search)
 2. Present 3 hook options using the data
 3. User selects hook
@@ -303,34 +334,17 @@ For each post (in order: Day 1, Day 2, Day 5):
 10. **Update Notion task** with this post's content
 11. **Then move to next post** - repeat from step 1
 
+For Day 5 (Selfie post):
+1. **NO data hook needed** — selfie posts are personal stories with professional framing
+2. Ask user to share the personal story/experience they want to feature
+3. Draft the post based on their story (keep their voice, add professional framing)
+4. User revises as needed
+5. **Proofread thoroughly** - check grammar, spelling, flow
+6. Finalize with hashtags and selfie visual reminder
+7. **Update Notion task** with this post's content
+
 **Jamie Check (after all 3 posts are complete):**
 Ask: "Would LinkedIn Jamie relate to all 3 of these posts? Do they feel professional enough to engage with publicly, while still leading to the deeper content?"
-
----
-
-## Step 6: Add Daily Engagement Section
-
-After all content is created, add the daily engagement section to ALL 5 Notion tasks:
-
-```
----
-✨ DAILY ENGAGEMENT (20-30 min total)
-
-📝 SUBSTACK NOTES
-Find 3-5 notes from writers in ADHD/writing/creativity space and leave thoughtful comments:
-• Add your perspective (not just "Great post!")
-• Share a related experience
-• Ask a thoughtful follow-up question
-• Aim for 2-3 sentences minimum
-• Quality > quantity - one great comment beats five generic ones
-
-🦋 BLUESKY
-Browse #ADHD #AI #Neurodivergent #Writing feeds and reply to 3-5 posts:
-• Share your experience or perspective
-• Ask a genuine follow-up question
-• Avoid generic comments like "Love this!"
-• Aim for comments that continue the conversation
-```
 
 ---
 
@@ -358,24 +372,18 @@ Visual: [suggestion]
 📝 SUBSTACK NOTE (type)
 
 [Full note text including link if applicable - ready to copy-paste]
-
----
-
-✨ DAILY ENGAGEMENT (20-30 min total)
-[engagement section]
 ```
 
 ---
 
 ## Workflow Summary
 
-1. **Identify the post** (Step 1) - Query Notion directly (don't ask user), read Jamie persona, read post content
-2. **Confirm schedule and create task shells** (Step 2) - present table with actual dates → user confirms → create 5 empty Notion tasks with Plan Dates and Project links
+1. **Identify the post** (Step 1) - Query Notion directly (don't ask user), read Jamie persona, read post content from Ulysses
+2. **Confirm schedule and create task shells** (Step 2) - present table with actual dates → user confirms → create 5 empty Notion tasks with Plan Dates and Project links (use full URL for Project relation)
 3. **Create Bluesky posts** (Step 3) - draft 5 → user tweaks → proofread → Jamie check → finalize → **update Notion tasks**
 4. **Create Substack Notes** (Step 4) - linked note first → emotional notes → restack prompt → AI/practical note → proofread → Jamie check → finalize → **update Notion tasks**
-5. **Create LinkedIn posts one at a time** (Step 5) - adjacent topic → data research → hooks → user picks → draft with professional framing → user revises → proofread → finalize → **update Notion task** → repeat for each post → Jamie check
-6. **Add daily engagement section** (Step 6) - add to all 5 tasks
-7. **Summarize** what was created
+5. **Create LinkedIn posts one at a time** (Step 5) - adjacent topic → data research → hooks → user picks → draft with professional framing → user revises → proofread → finalize → **update Notion task** → repeat for each post (note: selfie posts skip data research) → Jamie check
+6. **Summarize** what was created
 
 ---
 
@@ -390,12 +398,16 @@ Visual: [suggestion]
 - **Jamie sub-persona check** - after each platform, verify content resonates with that platform's Jamie
 - **LinkedIn = Trojan horse** - adjacent professional topics + data hooks, NOT direct post summaries
 - **LinkedIn AI post** - ensure at least one post (the PDF/Framework) has an AI angle
+- **LinkedIn selfie posts** - NO data hooks needed; draft directly from user's personal story
 - **LinkedIn link in post** - include link directly in post body (not first comment)
 - **LinkedIn closing format** - use signature block with intro variation + reaffirming sentence
 - **ADHD-friendly** - keep responses concise, use clear formatting
 - **Conversational tone** - this is a collaborative process
 - **Avoid formulaic language** - no templates, no "Hot take:", no "I used to... Then...", no rhetorical question hooks
+- **Avoid AI clichés** - "Here's the truth," "Turns out," "Game-changer," etc. (see full list in Voice & Tone Guidelines)
+- **Read from Ulysses directly** - NOT via WebFetch (which only returns summaries)
 - **Weekend-free** - by default no social media tasks on Saturday/Sunday (unless specific circumstances impact the schedule)
 - **Full PDF content** - include all slide text, prompts, and examples in tasks (not just titles)
 - **Copy-paste ready** - all content (text + link + hashtags) together for easy copying
 - **Use Plan Date** - when setting task dates in Notion, use Plan Date property (not Due Date)
+- **Use full URLs for relations** - when creating tasks, Project relation requires full URL format (e.g., `https://www.notion.so/...`), not just page ID

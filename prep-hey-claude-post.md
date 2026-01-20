@@ -239,15 +239,14 @@ For each recommended link:
 
 **Default Publish Date:** Tomorrow (unless user specifies otherwise)
 
-### Known Issue: MCP Tool Bug
-The `mcp__notion__API-post-page` tool has a bug where it serializes the `parent` object as a string instead of an object. **Workaround:** Use curl with the API token from `~/.mcp.json`:
+### Creating the Notion Entry
 
-```bash
-curl -s -X POST 'https://api.notion.com/v1/pages' \
-  -H "Authorization: Bearer [TOKEN_FROM_~/.mcp.json]" \
-  -H "Content-Type: application/json" \
-  -H "Notion-Version: 2022-06-28" \
-  -d '{"parent": {"database_id": "2a908620-e1b0-80fd-866d-ea04d0ba0a84"}, "properties": {...}}'
+Use `notion-create-pages` with the data_source_id:
+```json
+{
+  "parent": {"data_source_id": "2a908620-e1b0-80fd-866d-ea04d0ba0a84"},
+  "pages": [{"properties": {"Title": "Post title", ...}}]
+}
 ```
 
 ### Before creating the Notion entry:

@@ -18,12 +18,15 @@ Creates a consistent, ADHD-friendly closing ritual that:
 
 You will help close the session through the following steps:
 1. **Session Review** - Summarize what was accomplished
-2. **CLAUDE.md Check** - Identify needed updates
-3. **Update Documentation** - Make changes to CLAUDE.md
-4. **File Sync Reminders** - Remind to copy updated skills/commands
-5. **AI Tools Resource Page Check** - Check if Hey Claude resource page needs updating
-6. **Capture Loose Ends** - Note any follow-ups or unfinished items
-7. **Final Check** - Offer to create brain dumps or reminders
+2. **What Did I Learn About Olena?** - Reflect on non-obvious insights about how she works, thinks, and wants to be supported
+3. **Sweep for Factual Changes** - Scan for concrete updates (new projects, commands, files, etc.)
+4. **Update Documentation** - Capture both learnings and factual changes in CLAUDE.md
+5. **Sync Brain to GitHub** - Push CLAUDE.md changes to olena-brain repo
+6. **Coral Brain Context Check** - Verify Coral still gets the right sections
+7. **File Sync** - Copy updated skills/commands to active location
+8. **AI Tools Resource Page Check** - Check if Hey Claude resource page needs updating
+9. **Capture Loose Ends** - Note any follow-ups or unfinished items
+10. **Final Check** - Offer to create brain dumps or reminders
 
 ---
 
@@ -62,84 +65,142 @@ You will help close the session through the following steps:
 
 ---
 
-## Step 2: CLAUDE.md Check
+## Step 2: What Did I Learn About Olena?
 
-**Read CLAUDE.md** and compare against the session review.
+**The goal of this step is to grow as Olena's assistant.** Re-read the conversation and ask: *What do I understand about Olena now that I didn't before?*
 
-### Look for updates needed in these sections:
+Think beyond the tasks completed. The most valuable learnings are often the ones that weren't the main topic — they show up in how Olena reacted, what she avoided, what lit her up, what she said casually.
 
-#### Active Projects & Writing
-- New posts created or published?
-- Status changes (draft → scheduled → published)?
-- New writing completed (book chapters, content)?
+**What to reflect on:**
 
-#### Claude Code Slash Commands
-- New commands created?
-- Existing commands updated or refined?
-- Status changes (framework → ready to use)?
+- **How her brain worked today** — Did she hit a wall? What got her unstuck? Did she need a push or space? What triggered overwhelm or avoidance? What kept her engaged?
+- **How she wants to be supported** — Did she correct my approach? ("Don't give me options, just pick one.") Did she respond better to some interaction styles than others? Did she say "I prefer..." or "Please don't..." about anything?
+- **What she revealed about herself** — New constraints (schedule, energy, capacity), fears or anxieties that surfaced, things she's excited about, shifts in how she sees her projects or goals.
+- **Writing voice discoveries** — Tone shifts, word preferences, what felt right or wrong in drafts we worked on together.
+- **Patterns worth naming** — Recurring behaviors that aren't yet captured in CLAUDE.md (e.g., "she always does X before starting Y" or "she shuts down when Z happens").
 
-#### Notion Workspace Structure
-- New databases or fields added?
-- Database IDs discovered or changed?
-- New projects added to Active Projects list?
+**Don't force it.** Some sessions are purely operational and there's nothing new to learn. That's fine — acknowledge it and move on.
 
-#### Local Folder Structure
-- New folders created?
-- Files moved or reorganized?
-- Important new file locations?
+### Decide what to capture:
 
-#### ADHD Patterns to Support
-- New patterns identified?
-- Insights from coaching sessions?
-- Updated understanding of what works?
+For each insight, decide: is this worth remembering for future sessions? If yes:
+- **What I learned:** [The insight]
+- **Where it belongs in CLAUDE.md:** [Section — usually "ADHD Patterns to Support," "Working WITH Olena's Brain," or "Writing Voice"]
+- **Why it matters:** [How this helps me support Olena better]
 
-#### Writing Voice
-- Voice guidelines refined?
-- New tone or style notes discovered?
-- Examples to add?
-
-#### How to Help Most Effectively
-- New workflows to reference?
-- Additional knowledge bases to access?
-- Updated instructions?
-
-### Create update list:
-For each section needing updates:
-- **Section:** [Section name]
-- **Current:** [What it says now]
-- **Needs:** [What should be updated]
-- **Reason:** [Why this update is needed]
+If nothing new — confirm: "No new relational insights this session."
 
 ---
 
-## Step 3: Update Documentation
+## Step 3: Sweep for Factual Changes
 
-### Approach: Two-tier (like post proofreading)
+Now scan for the concrete stuff that needs updating in CLAUDE.md:
 
-**TIER 1: Simple factual updates**
-- New file locations
-- Database IDs
-- Project status changes
-- New command additions
-- Date stamps
+- **Active Projects & Writing** — New posts published? Status changes? New writing completed?
+- **Claude Code Slash Commands** — New commands created or updated? Status changes?
+- **Notion Workspace Structure** — New databases, fields, projects, or IDs?
+- **Local Folder Structure** — New folders, moved files, important new paths?
+- **ADHD Patterns to Support** — New patterns identified or existing ones refined?
+- **Writing Voice** — Guidelines refined or new notes discovered?
+- **How to Help Most Effectively** — New workflows, knowledge bases, or instructions?
 
-**Action:** Make these updates directly to CLAUDE.md
+### Create update list:
 
-**TIER 2: Substantial changes**
+For each factual change:
+- **What changed:** [The concrete change]
+- **Where it belongs in CLAUDE.md:** [Section name]
+- **Current value:** [What it says now]
+- **New value:** [What it should say]
+
+If nothing changed — confirm: "No factual updates needed."
+
+---
+
+## Step 4: Update Documentation
+
+**Apply updates from both Step 2 (learnings) and Step 3 (factual changes) to CLAUDE.md.**
+
+### Approach: Two-tier
+
+**TIER 1: Direct updates** (make these without asking)
+- New file locations, database IDs, project status changes
+- New command additions, date stamps
+- Adding a bullet point to an existing list (e.g., new pattern under "Working WITH Olena's Brain")
+
+**TIER 2: Present before/after for user approval first**
 - Voice guideline refinements
 - New sections to add
 - Structural reorganization
 - Significant content additions
 
-**Action:** Present before/after for user approval, then update
-
 ### After all updates:
 - Update the "Last Updated" timestamp at bottom
 - Confirm all changes with brief summary
 
+**If neither Step 2 nor Step 3 produced updates, skip this step and confirm:** "Nothing to update in CLAUDE.md this session."
+
 ---
 
-## Step 4: File Sync
+## Step 5: Sync Brain to GitHub
+
+**After updating CLAUDE.md, sync to GitHub so all tools have the latest version.**
+
+### Commands to run:
+```bash
+cd ~/Documents/PROJECTS/olena-brain && git add CLAUDE.md && git commit -m "Update brain: [brief description of changes]" && git push
+```
+
+### Process:
+1. Stage CLAUDE.md changes
+2. Commit with descriptive message summarizing what was updated
+3. Push to origin
+
+### Confirm to user:
+"✅ Brain synced to GitHub — all tools will see the latest version."
+
+**If no changes were made to CLAUDE.md, skip this step AND Step 6, and confirm:** "No brain changes this session — skipping GitHub sync and Coral check."
+
+---
+
+## Step 6: Coral Brain Context Check
+
+**Coral fetches CLAUDE.md from GitHub but skips certain sections that aren't relevant for a voice assistant. If the brain changed, verify Coral still gets the right context.**
+
+### When this matters:
+- Sections were **added, renamed, or restructured** in CLAUDE.md
+- Content was **moved between sections** (e.g., from a skipped section to a non-skipped one, or vice versa)
+- A new section was added that Coral **should NOT** receive (Claude Code-specific details, file paths, command docs)
+
+### Current SKIP_SECTIONS list:
+Coral skips these sections (defined in `voice-assistant/lib/brain.ts` line 14):
+- `### Custom Claude Skills`
+- `### Claude Code Slash Commands`
+- `## Local Folder Structure`
+- `## Obsidian Vault`
+- `### Book Research Tagging Structure`
+- `### Writing Folder`
+- `### Writing Voice`
+- `## How to Help Most Effectively`
+- `#### Research Tools`
+- `#### Key Figures of Fascination`
+
+### What to check:
+1. **New sections added?** → Should Coral see them, or should they be added to SKIP_SECTIONS?
+2. **Sections renamed?** → The skip list uses `startsWith` matching — if a heading was renamed, the old entry won't match anymore. Update the skip list.
+3. **Sections restructured?** → Heading level changes (e.g., `###` to `##`) affect which sub-sections get skipped. Verify the skip still works correctly.
+
+### If changes needed:
+Update `SKIP_SECTIONS` in `~/Documents/PROJECTS/voice-assistant/lib/brain.ts` and push to GitHub (Vercel auto-deploys).
+
+### Confirm to user:
+- If no impact: "✅ Coral's brain context is unaffected by today's changes."
+- If update needed: "⚠️ Coral's SKIP_SECTIONS needs updating — [describe what changed]."
+
+**If no changes were made to CLAUDE.md, this step was already skipped in Step 5.**
+
+---
+
+## Step 7: File Sync
 
 If any Claude skills or slash commands were created or modified during the session, **copy them to the active location automatically**:
 
@@ -152,11 +213,11 @@ If any Claude skills or slash commands were created or modified during the sessi
 
 **After copying, confirm to user:** "✅ Copied [command-name].md to ~/.claude/commands/"
 
-**Only do this step if changes were actually made to these files.** If no skills or commands were modified, skip to Step 5.
+**Only do this step if changes were actually made to these files.** If no skills or commands were modified, skip to Step 8.
 
 ---
 
-## Step 5: AI Tools Resource Page Check
+## Step 8: AI Tools Resource Page Check
 
 **This step applies ANY time the session involved:**
 - Updated or created Claude skills
@@ -169,7 +230,7 @@ If any Claude skills or slash commands were created or modified during the sessi
 
 ---
 
-## Step 6: Capture Loose Ends
+## Step 9: Capture Loose Ends
 
 Identify and document:
 
@@ -206,7 +267,7 @@ Identify and document:
 
 ---
 
-## Step 7: Final Check
+## Step 10: Final Check
 
 ### Offer capture options:
 

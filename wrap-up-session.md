@@ -85,7 +85,7 @@ Think beyond the tasks completed. The most valuable learnings are often the ones
 
 For each insight, decide: is this worth remembering for future sessions? If yes:
 - **What I learned:** [The insight]
-- **Where it belongs in CLAUDE.md:** [Section — usually "ADHD Patterns to Support," "Working WITH Olena's Brain," or "Writing Voice"]
+- **Where it belongs in CLAUDE.md:** [Section — usually "ADHD Patterns to Support," "Working WITH Olena's Brain," "When Working on Code," or "Writing Voice"]
 - **Why it matters:** [How this helps me support Olena better]
 
 If nothing new — confirm: "No new relational insights this session."
@@ -102,6 +102,7 @@ Now scan for the concrete stuff that needs updating in CLAUDE.md:
 - **Local Folder Structure** — New folders, moved files, important new paths?
 - **ADHD Patterns to Support** — New patterns identified or existing ones refined?
 - **Writing Voice** — Guidelines refined or new notes discovered?
+- **When Working on Code** — New development or debugging patterns? Lessons from how we approached technical work?
 - **How to Help Most Effectively** — New workflows, knowledge bases, or instructions?
 
 ### Create update list:
@@ -183,6 +184,7 @@ Coral skips these sections (defined in `voice-assistant/lib/brain.ts` line 14):
 - `## How to Help Most Effectively`
 - `#### Research Tools`
 - `#### Key Figures of Fascination`
+- `### When Working on Code`
 
 ### What to check:
 1. **New sections added?** → Should Coral see them, or should they be added to SKIP_SECTIONS?
@@ -202,7 +204,9 @@ Update `SKIP_SECTIONS` in `~/Documents/PROJECTS/voice-assistant/lib/brain.ts` an
 
 ## Step 7: File Sync
 
-If any Claude skills or slash commands were created or modified during the session, **copy them to the active location automatically**:
+If any Claude skills or slash commands were created or modified during the session:
+
+### 1. Copy to active location
 
 - **Commands:** Copy from `Documents/PROJECTS/claude-code-commands/` to `~/.claude/commands/`
   ```bash
@@ -211,7 +215,19 @@ If any Claude skills or slash commands were created or modified during the sessi
 
 - **Skills:** Copy from `Documents/PROJECTS/claude-skills/` to the active skills location (if applicable)
 
-**After copying, confirm to user:** "✅ Copied [command-name].md to ~/.claude/commands/"
+### 2. Push source repos to GitHub
+
+- **Commands repo:**
+  ```bash
+  cd ~/Documents/PROJECTS/claude-code-commands && git add -A && git commit -m "Update: [brief description]" && git push
+  ```
+
+- **Skills repo** (if applicable):
+  ```bash
+  cd ~/Documents/PROJECTS/claude-skills && git add -A && git commit -m "Update: [brief description]" && git push
+  ```
+
+**After both steps, confirm to user:** "✅ Copied [files] to active location and pushed to GitHub."
 
 **Only do this step if changes were actually made to these files.** If no skills or commands were modified, skip to Step 8.
 

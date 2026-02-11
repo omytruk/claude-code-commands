@@ -115,8 +115,8 @@ If they say yes, remind them to run the command (or run it if you can chain comm
 
 ## Quick Reference: Jamie in 30 Seconds
 
-- ADHD creative, late 30s-40s
+- ADHD creative, late 30s-40s (they/them)
 - Has a "project junkyard" of half-finished things
-- Thinks technical AI stuff "isn't for them"
-- Tired of picking one box
-- Arrives: "I can't" → Leaves: "I can do it"
+- Sees others building with AI and thinks "that's not for me" — but wants to
+- Wrestles with: "Am I technical enough?" and "Is making things easier cheating?"
+- Arrives: "I can't build that" → Leaves: "I WANT to build something — and I think I can"

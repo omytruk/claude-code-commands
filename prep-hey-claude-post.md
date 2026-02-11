@@ -7,10 +7,11 @@ This command helps prepare a Hey Claude Substack post from Ulysses for publicati
 You will help prepare a Substack post through the following steps:
 1. **Initial Draft Review** (Optional) - Flow, structure, formatting
 2. **Proofreading & Cleanup** - Three-tier approach
-3. **SEO-Friendly URL** - Generate URL from heading
-4. **Midjourney Prompt** - Create feature image prompt
-5. **Cross-Linking** - Add links to new post (premise-based matching)
-6. **Notion Update** - Add post to database with Draft Link, Premise, Audience, SEO Keywords
+3. **Echo Check** - Word repetition & pattern analysis (run `/echo-check` on post content)
+4. **SEO-Friendly URL** - Generate URL from heading
+5. **Midjourney Prompt** - Create feature image prompt
+6. **Cross-Linking** - Add links to new post (premise-based matching)
+7. **Notion Update** - Add post to database with Draft Link, Premise, Audience, SEO Keywords
 
 ---
 

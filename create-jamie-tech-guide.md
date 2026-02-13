@@ -156,17 +156,29 @@ Set these properties:
 - **Audience:** Builders
 - **SEO Keywords:** Relevant search terms
 
-### Step 2: Create Task to Add Guide to Master Guide
+### Step 2: Figure Out Placement in Master Guide
 
-Create a Notion task reminding Olena to add this new guide to the master guide page:
+The master guide is a living document that consolidates all individual guides as numbered steps. Each new guide needs to land in the right spot.
+
+**Master guide:** https://olenamytruk.substack.com/p/claude-code-for-creatives
+
+1. **Pull up the master guide content** — Use WebFetch to read the current master guide and present the existing step structure to Olena
+2. **Decide placement together** — Should this new guide be the next step at the end, or does it logically fit between existing steps? Discuss with Olena.
+3. **Write the blurb together** — Each step in the master guide has a short description and link. Co-write the blurb for the new guide in the same style as existing ones.
+
+### Step 3: Create Task to Add Guide to Master Guide
+
+Create a Notion task with all the details so Olena can just execute:
 
 **Tasks DB data source ID:** `2a708620-e1b0-807e-b3eb-000b698751cc`
 **Project (Hey Claude):** `https://www.notion.so/2a708620e1b081dfba5cda0514b7f74b`
 
 Task title: `Add [guide name] to master Claude Code guide`
-Task description: Include the guide URL and a brief note about where it fits in the master guide's structure.
-
-**Master guide:** https://olenamytruk.substack.com/p/claude-code-for-creatives
+Task description should include:
+- The guide URL
+- **Where** it goes in the master guide (e.g., "New Step 4, after 'Giving Claude Code a memory'")
+- **The blurb** — ready to paste into the master guide
+- If inserting between existing steps, note which step numbers need to be renumbered
 
 ---
 

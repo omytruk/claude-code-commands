@@ -10,11 +10,11 @@ This command creates a week's worth of social media content to promote a Hey Cla
 
 Before creating content, understand who we're speaking to on each platform:
 
-**Bluesky Jamie** — The younger/more online version. More openly ADHD, uses it as identity. Tech-curious but not technical. Looking for community and validation. Ready to engage with vulnerable content directly.
+**Bluesky Jamie** — The younger/more online version. Openly curious about AI and creative identity. May be ADHD/neurodivergent or just a creative overthinker who senses AI can do more for them. Tech-curious but not technical. Looking for community and validation. Ready to engage with vulnerable content directly.
 
-**Substack Jamie** — The writer version. Already exploring their creative side, reading other writers. More open about neurodivergence. Looking for "people like me." Appreciates longer, more reflective content.
+**Substack Jamie** — The writer/creator version. Already exploring their creative side, reading other writers. More open about struggles (neurodivergence, self-doubt, creative blocks, wanting to build but not knowing where to start). Looking for "people like me." Appreciates longer, more reflective content.
 
-**LinkedIn Jamie** — The professional version. In a corporate or freelance role, managing work while hiding ADHD struggles. Scrolling during a break between meetings. Needs permission to admit the struggle exists. NOT ready to publicly engage with vulnerable content — needs professional framing first.
+**LinkedIn Jamie** — The professional version. In a corporate or freelance role, sensing AI could do more for them than they're currently doing with it. May be hiding ADHD struggles or simply feeling like they're not "technical enough" to build with AI. Scrolling during a break between meetings. NOT ready to publicly engage with vulnerable content — needs professional framing as entry point.
 
 ### Why This Approach
 
@@ -298,11 +298,11 @@ Hi, I'm Olena 👋 I build (and write about) [VARIATION]...
 ```
 
 **Intro variations (rotate through):**
-- "...AI tools that work with neurodivergent and creative brains rather than against them."
+- "...AI tools that work with creative brains rather than against them."
 - "...helpful AI tools that solve real human problems."
-- "...AI tools that reduce cognitive load for thinking professionals."
-- "...how AI can hold the structure so you can just create."
-- "...AI tools that help neurodivergent professionals and creatives work with their brains, not against them."
+- "...how non-technical creatives can build real things with AI."
+- "...the messy, real process of building useful things with AI — no coding required."
+- "...how AI can help curious creative people build things they didn't think they could build."
 
 **Reaffirming sentence examples:**
 - "If there's an important project you are afraid to take a break from because you worry you won't be able to get back to it, please know that what you need is not 100% consistency but something that will make it easy for you to start again."

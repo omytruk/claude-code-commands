@@ -270,7 +270,7 @@ Use `notion-create-pages` with the data_source_id:
 **Field descriptions:**
 - **Draft Link** — Substack's preview link that works before publication. Used by social content command to read post content.
 - **Premise** — Used for semantic cross-linking between posts. Should capture the core "what this post is about" in a way that can be compared to other posts.
-- **Audience** — Primary persona(s) this post is written for. Options: ADHD, Writers, Artists (can combine).
+- **Audience** — Primary persona(s) this post is written for. Options: ADHD, Writers, Artists, Builders (can combine).
 - **SEO Keywords** — Terms people might search for that this post addresses. Used for discoverability and future SEO optimization.
 
 ---

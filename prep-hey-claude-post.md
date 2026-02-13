@@ -11,7 +11,8 @@ You will help prepare a Substack post through the following steps:
 4. **SEO-Friendly URL** - Generate URL from heading
 5. **Midjourney Prompt** - Create feature image prompt
 6. **Cross-Linking** - Add links to new post (premise-based matching)
-7. **Notion Update** - Add post to database with Draft Link, Premise, Audience, SEO Keywords
+7. **Email Header & Footer Check** - Remind to review post email header/footer
+8. **Notion Update** - Add post to database with Premise, Audience, SEO Keywords
 
 ---
 
@@ -232,7 +233,16 @@ For each recommended link:
 
 ---
 
-## Step 6: Update Notion
+## Step 6: Email Header & Footer Check
+
+**Remind the user** to review the header and footer of the post email in Substack before publishing.
+
+- Header and footer appear in the email version of the post (not the web version)
+- Ask: "Before we wrap up — do you want to check the **header and footer** of the post email in Substack's editor? Update them if needed before publishing."
+
+---
+
+## Step 7: Update Notion
 
 **Database ID:** `2a908620-e1b0-80fd-866d-ea04d0ba0a84` (Substack Posts)
 
@@ -250,17 +260,9 @@ Use `notion-create-pages` with the data_source_id:
 }
 ```
 
-### Before creating the Notion entry:
-
-**Ask the user for the Draft Link:**
-- Substack provides a draft preview link that works before the post is published
-- This link is needed so the `/create-hey-claude-social-content` command can read the post content before publication
-- Ask: "What's the Substack draft link for this post? (You can find it in Substack's editor under Share → Copy link)"
-
 **Create new page with:**
 - **Title:** Post title
 - **Link:** `https://olenamytruk.substack.com/p/[url-slug]`
-- **Draft Link:** The draft preview URL from Substack (URL field)
 - **Publication:** Relation to Hey Claude
 - **Published Date:** YYYY-MM-DD format
 - **Premise:** 3-8 word core idea of the post (from Step 5b)
@@ -268,7 +270,6 @@ Use `notion-create-pages` with the data_source_id:
 - **SEO Keywords:** Comma-separated list of keywords to optimize for (from research or post content)
 
 **Field descriptions:**
-- **Draft Link** — Substack's preview link that works before publication. Used by social content command to read post content.
 - **Premise** — Used for semantic cross-linking between posts. Should capture the core "what this post is about" in a way that can be compared to other posts.
 - **Audience** — Primary persona(s) this post is written for. Options: ADHD, Writers, Artists, Builders (can combine).
 - **SEO Keywords** — Terms people might search for that this post addresses. Used for discoverability and future SEO optimization.

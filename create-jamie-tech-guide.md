@@ -137,6 +137,39 @@ Use kebab-case for filenames (e.g., `getting-started-with-claude-code.md`, `intr
 
 ---
 
+## PHASE 5: Publish & Track
+
+### Step 1: Add to Notion Substack Posts DB
+
+After the guide is published on Substack, create an entry in the Substack Posts database:
+
+**Data Source ID:** `2a908620-e1b0-80ad-8d78-000bc8f9d2cd`
+**Publication (Hey Claude):** `https://www.notion.so/2a908620e1b080779c7ddcc26e8f00f4`
+
+Set these properties:
+- **Title:** Guide title
+- **Post Type:** Tech Guide
+- **Link:** Published Substack URL
+- **Published Date:** Publication date
+- **Publication:** Hey Claude
+- **Premise:** 3-8 word core idea
+- **Audience:** Builders
+- **SEO Keywords:** Relevant search terms
+
+### Step 2: Create Task to Add Guide to Master Guide
+
+Create a Notion task reminding Olena to add this new guide to the master guide page:
+
+**Tasks DB data source ID:** `2a708620-e1b0-807e-b3eb-000b698751cc`
+**Project (Hey Claude):** `https://www.notion.so/2a708620e1b081dfba5cda0514b7f74b`
+
+Task title: `Add [guide name] to master Claude Code guide`
+Task description: Include the guide URL and a brief note about where it fits in the master guide's structure.
+
+**Master guide:** https://olenamytruk.substack.com/p/claude-code-for-creatives
+
+---
+
 ## What Success Looks Like
 
 By the end of this process:
@@ -144,6 +177,7 @@ By the end of this process:
 - No step requires Googling or prior knowledge
 - The tone feels like a friend helping, not a tutorial lecturing
 - Jamie finishes thinking "This is actually for someone like me"
+- Guide is tracked in Notion and queued to be added to the master guide
 
 ---
 
@@ -151,3 +185,5 @@ By the end of this process:
 
 Check existing guides for consistency:
 - `~/Documents/WRITING/Hey Claude/Tech Guides/`
+- **Master guide:** https://olenamytruk.substack.com/p/claude-code-for-creatives
+- **Individual guides:** Your first day with Claude Code, Giving Claude Code a memory, Make friends with Claude Code commands

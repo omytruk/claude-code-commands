@@ -231,7 +231,8 @@ Generate 3 prompt options combining scene + parameters.
 
 ## Step 6: Update Notion
 
-**Database ID:** `2a908620-e1b0-80fd-866d-ea04d0ba0a84` (Substack Posts)
+**Data Source ID:** `2a908620-e1b0-80ad-8d78-000bc8f9d2cd` (Substack Posts — use this for creating pages)
+**Database ID (for searching):** `2a908620-e1b0-80fd-866d-ea04d0ba0a84`
 
 **The Cheshire Cat Lab Publication ID:** `2a908620-e1b0-80a0-a6d7-d08075879a85`
 
@@ -242,7 +243,7 @@ Generate 3 prompt options combining scene + parameters.
 Use `notion-create-pages` with the data_source_id:
 ```json
 {
-  "parent": {"data_source_id": "2a908620-e1b0-80fd-866d-ea04d0ba0a84"},
+  "parent": {"data_source_id": "2a908620-e1b0-80ad-8d78-000bc8f9d2cd"},
   "pages": [{"properties": {"Title": "Post title", ...}}]
 }
 ```
@@ -255,6 +256,7 @@ Use `notion-create-pages` with the data_source_id:
 
 **Create new page with:**
 - **Title:** Post title
+- **Post Type:** Essay
 - **Link:** `https://thecheshirecatlab.substack.com/p/[url-slug]`
 - **Draft Link:** The draft preview URL from Substack (URL field)
 - **Publication:** Relation to The Cheshire Cat Lab

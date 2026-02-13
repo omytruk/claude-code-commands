@@ -244,7 +244,8 @@ For each recommended link:
 
 ## Step 7: Update Notion
 
-**Database ID:** `2a908620-e1b0-80fd-866d-ea04d0ba0a84` (Substack Posts)
+**Data Source ID:** `2a908620-e1b0-80ad-8d78-000bc8f9d2cd` (Substack Posts — use this for creating pages)
+**Database ID (for searching):** `2a908620-e1b0-80fd-866d-ea04d0ba0a84`
 
 **Hey Claude Publication ID:** `2a908620-e1b0-8077-9c7d-dcc26e8f00f4`
 
@@ -255,18 +256,19 @@ For each recommended link:
 Use `notion-create-pages` with the data_source_id:
 ```json
 {
-  "parent": {"data_source_id": "2a908620-e1b0-80fd-866d-ea04d0ba0a84"},
+  "parent": {"data_source_id": "2a908620-e1b0-80ad-8d78-000bc8f9d2cd"},
   "pages": [{"properties": {"Title": "Post title", ...}}]
 }
 ```
 
 **Create new page with:**
 - **Title:** Post title
+- **Post Type:** Essay or Building Post (based on content — Building Post if it takes the reader behind the scenes of building a tool)
 - **Link:** `https://olenamytruk.substack.com/p/[url-slug]`
 - **Publication:** Relation to Hey Claude
 - **Published Date:** YYYY-MM-DD format
 - **Premise:** 3-8 word core idea of the post (from Step 5b)
-- **Audience:** Target persona(s) - e.g., "ADHD", "ADHD, Writers", "Artists"
+- **Audience:** Target persona(s) - e.g., "ADHD", "ADHD, Writers", "Artists", "Builders"
 - **SEO Keywords:** Comma-separated list of keywords to optimize for (from research or post content)
 
 **Field descriptions:**

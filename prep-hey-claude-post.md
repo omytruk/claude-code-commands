@@ -10,9 +10,10 @@ You will help prepare a Substack post through the following steps:
 3. **Echo Check** - Word repetition & pattern analysis (run `/echo-check` on post content)
 4. **SEO-Friendly URL** - Generate URL from heading
 5. **Midjourney Prompt** - Create feature image prompt
-6. **Cross-Linking** - Add links to new post (premise-based matching)
-7. **Email Header & Footer Check** - Remind to review post email header/footer
-8. **Notion Update** - Add post to database with Premise, Audience, SEO Keywords
+6. **Substack Tag** - Assign correct tag (Essays / Building Posts / Tech Guides)
+7. **Cross-Linking** - Add links to new post (premise-based matching, including guide cross-links)
+8. **Email Header & Footer Check** - Remind to review post email header/footer
+9. **Notion Update** - Add post to database with Premise, Audience, SEO Keywords
 
 ---
 
@@ -198,7 +199,24 @@ Generate 3 prompt options combining scene + parameters.
 
 ---
 
-## Step 5: Cross-Linking Plan
+## Step 5.5: Substack Tag
+
+**Identify the correct Substack tag** based on post content:
+
+| Tag | When to Use |
+|-----|-------------|
+| **Essays** | Addresses mental barriers through personal story and reflection |
+| **Building Posts** | Takes the reader behind the scenes of building a tool or system |
+| **Tech Guides** | Step-by-step guide enabling action (Jamie-friendly) |
+
+**Process:**
+1. Identify the correct tag
+2. Remind the user: "**Reminder:** Add the **[Tag Name]** tag to this post in Substack."
+3. Carry the Post Type through to the Notion entry (Step 8)
+
+---
+
+## Step 6: Cross-Linking Plan
 
 **Goal:** Strengthen SEO by adding relevant internal links to the new post using premise-based semantic matching.
 
@@ -230,10 +248,11 @@ For each recommended link:
 - **Natural anchor text** — link existing phrases, don't add new sentences
 - **Quality over quantity** — typically 0-2 links per new post
 - **Paywalled resource page:** Link to `https://olenamytruk.substack.com/p/adhd-ai-os` where relevant (hub for paid subscriber resources)
+- **Guide cross-links:** When the post mentions terms Jamie might not know (e.g., "terminal," "Claude Code"), link to the relevant tech guide. These don't need a semantic score — they serve Jamie's comprehension.
 
 ---
 
-## Step 6: Email Header & Footer Check
+## Step 7: Email Header & Footer Check
 
 **Remind the user** to review the header and footer of the post email in Substack before publishing.
 
@@ -242,7 +261,7 @@ For each recommended link:
 
 ---
 
-## Step 7: Update Notion
+## Step 8: Update Notion
 
 **Data Source ID:** `2a908620-e1b0-80ad-8d78-000bc8f9d2cd` (Substack Posts — use this for creating pages)
 **Database ID (for searching):** `2a908620-e1b0-80fd-866d-ea04d0ba0a84`

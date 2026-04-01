@@ -9,9 +9,9 @@ You will help prepare a Substack post through the following steps:
 2. **Proofreading & Cleanup** - Three-tier approach
 3. **Echo Check** - Word repetition & pattern analysis (run `/echo-check` on post content)
 4. **SEO-Friendly URL** - Generate URL from heading (with duplicate check)
-5. **Midjourney Prompt** - Create feature image prompt
+5. **Feature Photo** - Brainstorm documentary photo for feature image
 6. **Cross-Linking** - Add links between posts
-7. **Notion Update** - Add post to database with Draft Link, Premise, Audience, SEO Keywords
+7. **Notion Update** - Add post to database with Premise, Audience, SEO Keywords
 
 ---
 
@@ -140,67 +140,35 @@ Before finalizing the URL:
 
 ---
 
-## Step 4: Midjourney Prompt for Feature Image
+## Step 4: Feature Photo
 
-**Required Parameters:**
-```
---chaos 20 --sref 988536430 --sw 100 --v 7 --stylize 200 --ar 4:3
-```
+**Goal:** Brainstorm a documentary-style photograph to use as the feature image — a real photo of a real person or moment referenced in the essay.
 
-### Framework: Mine the Post First, Then Go Abstract
+### Process:
 
-**Step 4a: Extract the post's own visual language**
-Before inventing metaphors, ask: "What images does the post itself create?"
-- What comparisons or metaphors does the author use?
-- What physical scenes or moments are described?
-- What abstract concepts could be visualized?
-- Use THESE first — they're already connected to the content.
+**Step 4a: Identify photo candidates from the essay**
+List the real people, places, and moments mentioned in the post that could be photographed:
+- Named individuals (climbers, scientists, historical figures, etc.)
+- Specific events or moments described
+- Real locations referenced
 
-**Identify the core visual metaphor.** What's the ONE image that would make someone immediately get the post? For Cheshire Cat, lean toward the conceptual and dreamlike.
+**Step 4b: Recommend the strongest candidate**
+Consider:
+- Who/what carries the emotional weight of the piece?
+- Which image would make someone want to read the article?
+- Which person or moment appears most prominently in the essay's arc?
 
-**Step 4b: Define the emotional/conceptual core**
-What is the feeling or idea at the heart of this piece?
-- Wonder? Discovery? Paradox? Possibility?
-- What visual would evoke that state of mind?
-
-**Step 4c: Define the premise in 3-6 words**
-What is this post actually about? Strip it down to the core idea.
-
-**Step 4d: Identify 3 visual approaches**
-1. **Literal from the text** — A specific image or metaphor used in the post
-2. **Conceptual/symbolic** — An abstract representation of the core idea
-3. **Alice in Wonderland-adjacent** — Dreamlike, impossible, whimsical interpretation
-
-**Scene Focus for The Cheshire Cat Lab:**
-- Abstract/conceptual imagery
-- Imagination and wonder themes
-- Alice in Wonderland vibes (White Queen, impossible objects, etc.)
-- Creative exploration, impossible things
-- Dreamlike, philosophical
-- Whimsical yet contemplative
-
-**Step 4e: Write initial prompts with minimal words**
-- Describe WHAT you see, not how it feels
-- 5-10 words max for the scene
-- Always start with "illustration of..."
-
-**Step 4f: Interpretation check (for each prompt)**
-Ask: "What could someone think of when they see this prompt?"
-- List 3-5 possible interpretations
-- If any contradict the premise, revise the prompt
-- Add clarifying words to steer toward the right interpretation
-- Do NOT use negative words — Midjourney doesn't handle negatives well
-
-**Step 4g: Final prompts**
-Generate 3 prompt options combining scene + parameters.
-
-**Structure:** `illustration of [brief scene] [parameters]`
+**Step 4c: Suggest search direction**
+Provide specific guidance on what to search for:
+- The person's name + specific event/context
+- Type of shot that would work best (portrait, action, documentary)
+- Where to look (photographer archives, editorial photo sites, Wikipedia Commons, etc.)
 
 **Key Principles:**
-- **Conceptual first** — lean into abstract and symbolic for this publication
-- **Less is more** — keep descriptions concise (5-10 words for scene)
-- Do NOT include artistic style descriptions (--sref handles styling)
-- Avoid the word "text" (confuses Midjourney into generating text overlays)
+- **Real over generated** — documentary photography, not AI-generated imagery
+- **Connected to the content** — the photo should feature someone or something from the essay
+- **Editorial quality** — the kind of photo you'd see in a magazine feature or documentary
+- **Rights-aware** — flag if a photo likely requires licensing or attribution
 
 ---
 
@@ -248,17 +216,10 @@ Use `notion-create-pages` with the data_source_id:
 }
 ```
 
-### Before creating the Notion entry:
-
-**Ask the user for the Draft Link:**
-- Substack provides a draft preview link that works before the post is published
-- Ask: "What's the Substack draft link for this post? (You can find it in Substack's editor under Share → Copy link)"
-
 **Create new page with:**
 - **Title:** Post title
 - **Post Type:** Essay
 - **Link:** `https://thecheshirecatlab.substack.com/p/[url-slug]`
-- **Draft Link:** The draft preview URL from Substack (URL field)
 - **Publication:** Relation to The Cheshire Cat Lab
 - **Published Date:** YYYY-MM-DD format
 - **Premise:** 3-8 word core idea of the post (from Step 4c)
@@ -266,7 +227,6 @@ Use `notion-create-pages` with the data_source_id:
 - **SEO Keywords:** Comma-separated list of keywords to optimize for
 
 **Field descriptions:**
-- **Draft Link** — Substack's preview link that works before publication.
 - **Premise** — Used for semantic cross-linking between posts. Should capture the core "what this post is about."
 - **Audience** — Primary persona(s) this post is written for.
 - **SEO Keywords** — Terms people might search for that this post addresses.
